@@ -8,7 +8,7 @@ INC=$(CPPFLAGS)
 LINKPATH=$(LDFLAGS)
 GAMEPATH="/games/gigalomania"
 
-LIBS=-lSDL_mixer -lSDL_image -ljpeg -lpng -lSDL -lorbital -lz -Wl,--whole-archive -lpthread -Wl,--no-whole-archive
+LIBS=-lSDL_mixer -lSDL_image -ljpeg -lpng -lSDL -lorbital -lvorbisfile -lvorbis -logg -lz -Wl,--whole-archive -lpthread -Wl,--no-whole-archive
 
 all: $(APP)
 
